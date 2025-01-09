@@ -1,6 +1,10 @@
 {
   "colors" : [
     {
+      "color" : {
+        "platform" : "visionos",
+        "reference" : "systemBlueColor"
+      },
       "idiom" : "universal"
     }
   ],
