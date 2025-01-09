@@ -10,9 +10,22 @@
 		2F6C80852D2F598E0038C6CE /* File Flow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "File Flow.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		2F7493E12D2F95A900288BF5 /* Exceptions for "FileFlow" folder in "FileFlow" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 2F6C80842D2F598E0038C6CE /* FileFlow */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		2F6C80872D2F598E0038C6CE /* FileFlow */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				2F7493E12D2F95A900288BF5 /* Exceptions for "FileFlow" folder in "FileFlow" target */,
+			);
 			path = FileFlow;
 			sourceTree = "<group>";
 		};
@@ -259,9 +272,11 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FileFlow/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "File Flow";
 				"INFOPLIST_KEY_CFBundleDisplayName[sdk=macosx*]" = "File Flow";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -291,9 +306,11 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FileFlow/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "File Flow";
 				"INFOPLIST_KEY_CFBundleDisplayName[sdk=macosx*]" = "File Flow";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

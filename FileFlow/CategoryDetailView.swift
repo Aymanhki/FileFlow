@@ -3,18 +3,22 @@ import UniformTypeIdentifiers
 
 struct CategoryDetailView: View {
     let category: Category
-    @StateObject private var viewModel = FileAssociationsViewModel()
+    @ObservedObject var viewModel: FileAssociationsViewModel
+    // @StateObject private var viewModel = FileAssociationsViewModel()
     @State private var selectedApp: URL? = nil
     @State private var excludedExtensions: Set<String> = []
     @State private var showingAppIcon: NSImage? = nil
     @State private var showingResult: Bool = false
     @State private var operationResult: OperationResult? = nil
 
-    init(category: Category) {
+    init(category: Category, viewModel: FileAssociationsViewModel) {
         self.category = category
+        self.viewModel = viewModel
         let nonDefaultExtensions = Set(category.extensions).subtracting(category.defaultExtensions)
         _excludedExtensions = State(initialValue: nonDefaultExtensions)
     }
+    
+    
 
     var body: some View {
         ScrollView {
